@@ -39,5 +39,5 @@
 公式 | 変化 | 結合 | 厳格 | 勇気  
 幸運 | 庇護 | 治癒 | 慈愛
 
-## Special Thanks
+## Reference
 [やる夫が小説家になるようです](http://yaruo.wikia.com/wiki/%E3%82%84%E3%82%8B%E5%A4%AB%E3%81%8C%E5%B0%8F%E8%AA%AC%E5%AE%B6%E3%81%AB%E3%81%AA%E3%82%8B%E3%82%88%E3%81%86%E3%81%A7%E3%81%99)
