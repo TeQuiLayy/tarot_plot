@@ -17,9 +17,6 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore linkware images.
-/app/assets/images/tarot
-
 /node_modules
 /yarn-error.log
 
