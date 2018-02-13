@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TarotPlot</title>
+    <title><%= yield(:title) %>Fiction's oracle</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <header>
+      <div class="logo">
+        <%= link_to image_tag("logo.png", alt: "Fiction's oracle"), root_path %>
+      </div>
+      <nav>
+        <ul class="grobal-nav">
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
     <%= yield %>
+    </div>
+    <footer>
+      <small>(C)2018 yuyamegane</small>
+    </footer>
   </body>
 </html>
