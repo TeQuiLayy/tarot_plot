@@ -16,6 +16,51 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
+#index {
+  margin-top: 150px;
+}
+body {
+  background-image: url(bg-index.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#index h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+#index h2 {
+  font-size: 25px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin-bottom: 50px;
+}
+
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Bitter", serif;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 150px;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -59,10 +104,36 @@ header {
   margin: 0 20px;
   font-size: 20px;
   list-style: none;
+  font-family: 'Bitter', serif;
 }
 
 .grobal-nav li a {
   color: #ffffff;
+}
+
+.grobal-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+#wrap {
+  clear: both;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer small {
+  font-size: 12px;
 }
 
 section {
