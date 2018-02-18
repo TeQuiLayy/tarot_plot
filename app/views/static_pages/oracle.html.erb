@@ -1,0 +1,10 @@
+<% provide(:title, "Oracle | ") %>
+<div class="content">
+  <% tarot = (1..24).to_a %>
+  <% oracle = tarot.sample(6) %>
+  <% for i in 0..5 do %>
+    <% image_num = oracle[i].to_s.rjust(2, "0") %>
+    <% image_path = "tarot/"+image_num+".png" %>
+    <%= image_tag(image_path) %>
+  <% end %>
+</div>
