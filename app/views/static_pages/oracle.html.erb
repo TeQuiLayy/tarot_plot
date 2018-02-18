@@ -1,12 +1,17 @@
 <% provide(:title, "Oracle | ") %>
 <div class="content">
-  <% tarot = (1..24).to_a %>
-  <% position = [0, 1]%>
-  <% oracle = tarot.sample(6) %>
-  <% for i in 0..5 do %>
-    <% image_num = oracle[i].to_s.rjust(2, "0") %>
-    <% image_pos = position.sample(1) %>
-    <% image_path = "tarot/"+image_pos[0].to_s+image_num+".png" %>
-    <%= image_tag(image_path) %>
-  <% end %>
+  <p id="oracle">
+    <% tarot = (1..24).to_a %>
+    <% position = [0, 1]%>
+    <% oracle = tarot.sample(6) %>
+    <% for i in 0..5 do %>
+      <% image_num = oracle[i].to_s.rjust(2, "0") %>
+      <% image_pos = position.sample(1) %>
+      <% image_path = "tarot/"+image_pos[0].to_s+image_num+".png" %>
+      <%= image_tag(image_path, :width => "25%", :height => "25%", :id => "oracle") %>
+      <% if (i == 1) || (i == 3) %>
+        <br>
+      <% end %>
+    <% end %>
+  </p>
 </div>
