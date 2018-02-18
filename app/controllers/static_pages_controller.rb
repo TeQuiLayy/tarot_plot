@@ -3,7 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def oracle
-    @oracle = Oracle.new
   end
 
   def about
