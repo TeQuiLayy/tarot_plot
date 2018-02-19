@@ -8,10 +8,13 @@
       <% image_num = oracle[i].to_s.rjust(2, "0") %>
       <% image_pos = position.sample(1) %>
       <% image_path = "tarot/"+image_pos[0].to_s+image_num+".png" %>
-      <%= image_tag(image_path, :width => "25%", :height => "25%", :id => "oracle") %>
+      <%= image_tag(image_path, :height => "400px", :id => "tarot-image") %>
       <% if (i == 1) || (i == 3) %>
         <br>
       <% end %>
     <% end %>
+  </p>
+  <p id="result">
+    <%= image_tag("tarot/000.png", :height => "500px", :id => "result-image") %>
   </p>
 </div>

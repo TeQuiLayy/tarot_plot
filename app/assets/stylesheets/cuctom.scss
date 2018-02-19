@@ -7,6 +7,32 @@
 /* home */
 
 /* oracle */
+#oracle {
+  width: 480px;
+  margin: 10px;
+  float: left;
+}
+
+#tarot-image {
+  margin: 10px;
+}
+
+#result {
+  width: 420px;
+  margin: 0 10px 0 30px;
+  float: right;
+}
+
+#result-image {
+  margin-top: 40px;
+  margin-left: 140px
+}
+
+#oracle:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 /* about */
 
@@ -62,6 +88,10 @@ body {
   color: #ffffff;
   font-size: 20px;
   font-family: "Bitter", serif;
+}
+
+.btn:visited {
+  color: #ffffff;
 }
 
 footer {
@@ -134,10 +164,6 @@ header {
 .content {
   width: 960px;
   margin: 0 auto;
-}
-
-#oracle {
-  margin: 7px;
 }
 
 footer {
