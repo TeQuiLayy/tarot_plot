@@ -5,6 +5,29 @@
 
 
 /* home */
+#index {
+  margin-top: 150px;
+}
+
+#index h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+#index h2 {
+  font-size: 25px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin-bottom: 50px;
+}
+
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+}
 
 /* oracle */
 #oracle {
@@ -52,35 +75,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
-#index {
-  margin-top: 150px;
-}
 body {
   background-image: url(bg-index-compressor.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-}
-
-#index h1 {
-  font-size: 50px;
-  line-height: 1;
-  color: #ffffff;
-  font-family: "Bitter", serif;
-}
-
-#index h2 {
-  font-size: 25px;
-  line-height: 1;
-  color: #ffffff;
-  font-family: "Bitter", serif;
-  margin-bottom: 50px;
-}
-
-#index p {
-  font-size: 16px;
-  color: #ffffff;
 }
 
 .btn {
