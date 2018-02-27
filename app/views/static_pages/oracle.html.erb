@@ -9,7 +9,7 @@
       <% image_pos = position.sample(1) %>
       <% image_name = image_pos[0].to_s+image_num %>
       <% image_path = "tarot/"+image_name+".png" %>
-      <%= image_tag(image_path, :height => "400px", :id => "tarot-image") %>
+      <%= image_tag(image_path, :height => "400px", :class => "tarot-image") %>
       <% if (i == 1) || (i == 3) %>
         <br>
       <% end %>
@@ -21,8 +21,10 @@
 </div>
 
 <%= javascript_tag do %>
-  var target_img = document.getElementById("tarot-image");:
-  target_img.addEventListener("click", function(e){
-
-  });
+  var target_img = document.getElementsByClassName("tarot-image");
+  for (var i = 0 ; i < target_img.length; i++) {
+    target_img[i].addEventListener("click", function(){
+      alert("タロットクリック");
+    });
+  }
 <% end %>
