@@ -2,66 +2,6 @@
 @import "bootstrap";
 
 /* universal */
-
-
-/* home */
-#index {
-  margin-top: 150px;
-}
-
-#index h1 {
-  font-size: 50px;
-  line-height: 1;
-  color: #ffffff;
-  font-family: "Bitter", serif;
-}
-
-#index h2 {
-  font-size: 25px;
-  line-height: 1;
-  color: #ffffff;
-  font-family: "Bitter", serif;
-  margin-bottom: 50px;
-}
-
-#index p {
-  font-size: 16px;
-  color: #ffffff;
-}
-
-/* oracle */
-#oracle {
-  width: 480px;
-  margin: 10px;
-  float: left;
-}
-
-#tarot-image {
-  margin: 10px;
-}
-
-#result {
-  width: 420px;
-  margin: 0 10px 0 30px;
-  float: right;
-}
-
-#result-image {
-  margin-top: 40px;
-  margin-left: 140px
-}
-
-#oracle:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* about */
-
-/* cardlist */
-
-/* contact */
 body {
   margin: 0;
   padding: 0;
@@ -191,3 +131,74 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+
+/* home */
+#index {
+  margin-top: 150px;
+}
+
+#index h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+#index h2 {
+  font-size: 25px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin-bottom: 50px;
+}
+
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+/* oracle */
+#oracle {
+  width: 480px;
+  margin: 10px;
+  float: left;
+}
+
+.tarot-image {
+  margin: 10px;
+}
+
+#result {
+  width: 420px;
+  margin: 0 10px 0 30px;
+  float: right;
+}
+
+#result-image {
+  margin-top: 40px;
+  margin-left: 140px
+}
+
+#oracle:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* about */
+#about {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+
+/* cardlist */
+.cardlist {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+}
+
+/* contact */
