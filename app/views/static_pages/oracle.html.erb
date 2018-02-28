@@ -6,7 +6,7 @@
     <% oracle = tarot.sample(6) %>
     <% for i in 0..5 do %>
       <% image_num = oracle[i].to_s.rjust(2, "0") %>
-    <% image_pos = position.sample(1) %>
+      <% image_pos = position.sample(1) %>
       <% image_path = "tarot/"+image_pos[0].to_s+image_num+".png" %>
       <%= image_tag(image_path, :height => "400px", :class => "tarot-image") %>
       <% if (i == 1) || (i == 3) %>

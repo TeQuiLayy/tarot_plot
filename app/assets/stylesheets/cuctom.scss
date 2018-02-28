@@ -50,19 +50,6 @@ ul {
   padding: 0;
 }
 
-a {
-  color: #3583aa;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #788d98;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 header {
   width: 960px;
   height: 100px;
@@ -161,7 +148,8 @@ textarea {
 /* oracle */
 #oracle {
   width: 480px;
-  margin: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
   float: left;
 }
 
@@ -188,9 +176,34 @@ textarea {
 
 /* about */
 #about {
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 18px;
+  color: #e6e6e6;
   font-family: "Bitter", serif;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+#about p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#about table {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+#about a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+#about a:visited {
+  color: #e6e6e6;
+}
+
+#about a:hover {
+  text-decoration: underline;
 }
 
 
