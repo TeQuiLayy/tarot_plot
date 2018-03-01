@@ -9,7 +9,7 @@
       <% image_pos = position.sample(1) %>
       <% image_name = image_pos[0].to_s+image_num %>
       <% image_path = "tarot/"+image_name+".png" %>
-      <%= image_tag(image_path, :height => "400px", :class => "tarot-image", :id => image_num) %>
+      <%= image_tag(image_path, :height => "400px", :class => "tarot-image #{image_pos[0].to_s}", :id => image_num) %>
       <% if (i == 1) || (i == 3) %>
         <br>
       <% end %>
@@ -82,15 +82,12 @@
   var target_imgs = document.getElementsByClassName("tarot-image");
 
   var pos_cards = document.getElementsByClassName("positive");
-  console.log(pos_cards[0].innerText);
-
   var rev_cards = document.getElementsByClassName("reverse");
-  console.log(rev_cards[1].innerText);
 
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText;
+    document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の正位置";
     });
   }
 <% end %>
