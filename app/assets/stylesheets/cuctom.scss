@@ -217,10 +217,17 @@ textarea {
 
 
 /* cardlist */
-.cardlist {
+#cardlist h1 {
   font-size: 16px;
   color: #ffffff;
   font-family: "Bitter", serif;
 }
 
+.positive {
+  display: none;
+}
+
+.reverse {
+  display: none;
+}
 /* contact */

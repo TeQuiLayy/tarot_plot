@@ -7,8 +7,9 @@
     <% for i in 0..5 do %>
       <% image_num = oracle[i].to_s.rjust(2, "0") %>
       <% image_pos = position.sample(1) %>
-      <% image_path = "tarot/"+image_pos[0].to_s+image_num+".png" %>
-      <%= image_tag(image_path, :height => "400px", :class => "tarot-image") %>
+      <% image_name = image_pos[0].to_s+image_num %>
+      <% image_path = "tarot/"+image_name+".png" %>
+      <%= image_tag(image_path, :height => "400px", :class => "tarot-image", :id => image_name) %>
       <% if (i == 1) || (i == 3) %>
         <br>
       <% end %>
@@ -27,7 +28,7 @@
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent="あいうえお";
+    document.getElementById("result-description").textContent=this.id;
     });
   }
 <% end %>
