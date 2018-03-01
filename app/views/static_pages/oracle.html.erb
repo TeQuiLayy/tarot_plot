@@ -9,7 +9,7 @@
       <% image_pos = position.sample(1) %>
       <% image_name = image_pos[0].to_s+image_num %>
       <% image_path = "tarot/"+image_name+".png" %>
-      <%= image_tag(image_path, :height => "400px", :class => "tarot-image", :id => image_name) %>
+      <%= image_tag(image_path, :height => "400px", :class => "tarot-image", :id => image_num) %>
       <% if (i == 1) || (i == 3) %>
         <br>
       <% end %>
@@ -23,12 +23,75 @@
   </p>
 </div>
 
+<div class="cardlist">
+  <div>
+    <p class="positive" id="01">精神力 / 克己心 / 決断 / 意地</p>
+    <p class="positive" id="02">清楚</p>
+    <p class="positive" id="03">理性</p>
+    <p class="positive" id="04">秩序</p>
+    <p class="positive" id="05">知恵</p>
+    <p class="positive" id="06">誓約</p>
+    <p class="positive" id="07">善良</p>
+    <p class="positive" id="08">節度</p>
+    <p class="positive" id="09">至誠</p>
+    <p class="positive" id="10">生命</p>
+    <p class="positive" id="11">寛容</p>
+    <p class="positive" id="12">解放</p>
+    <p class="positive" id="13">調和</p>
+    <p class="positive" id="14">創造</p>
+    <p class="positive" id="15">信頼</p>
+    <p class="positive" id="16">公式</p>
+    <p class="positive" id="17">変化</p>
+    <p class="positive" id="18">結合</p>
+    <p class="positive" id="19">厳格</p>
+    <p class="positive" id="20">勇気</p>
+    <p class="positive" id="21">幸運</p>
+    <p class="positive" id="22">庇護</p>
+    <p class="positive" id="23">治癒</p>
+    <p class="positive" id="24">慈愛</p>
+  </div>
+  <div>
+    <p class="reverse" id="01">優柔不断 / 躊躇 / 本意でない結果</p>
+    <p class="reverse" id="02">清楚</p>
+    <p class="reverse" id="03">理性</p>
+    <p class="reverse" id="04">秩序</p>
+    <p class="reverse" id="05">知恵</p>
+    <p class="reverse" id="06">誓約</p>
+    <p class="reverse" id="07">善良</p>
+    <p class="reverse" id="08">節度</p>
+    <p class="reverse" id="09">至誠</p>
+    <p class="reverse" id="10">生命</p>
+    <p class="reverse" id="11">寛容</p>
+    <p class="reverse" id="12">解放</p>
+    <p class="reverse" id="13">調和</p>
+    <p class="reverse" id="14">創造</p>
+    <p class="reverse" id="15">信頼</p>
+    <p class="reverse" id="16">公式</p>
+    <p class="reverse" id="17">変化</p>
+    <p class="reverse" id="18">結合</p>
+    <p class="reverse" id="19">厳格</p>
+    <p class="reverse" id="20">勇気</p>
+    <p class="reverse" id="21">幸運</p>
+    <p class="reverse" id="22">庇護</p>
+    <p class="reverse" id="23">治癒</p>
+    <p class="reverse" id="24">慈愛</p>
+  </div>
+</div>
+
 <%= javascript_tag do %>
   var target_imgs = document.getElementsByClassName("tarot-image");
+
+  var pos_cards = document.getElementsByClassName("positive");
+  console.log(pos_cards[0].innerText);
+
+  var rev_cards = document.getElementsByClassName("reverse");
+  console.log(rev_cards[1].innerText);
+
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent=this.id;
+    document.getElementById("result-description").textContent=this.id-1;
+    console.log(pos_cards[this.id-1].innerText);
     });
   }
 <% end %>
