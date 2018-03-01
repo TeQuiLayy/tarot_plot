@@ -16,6 +16,9 @@
   </p>
   <p id="result">
     <%= image_tag("tarot/000.png", :height => "500px", :id => "result-image") %>
+    <div id="result-description">
+      説明
+    </div>
   </p>
 </div>
 
@@ -24,6 +27,7 @@
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
+    document.getElementById("result-description").textContent="あいうえお";
     });
   }
 <% end %>
