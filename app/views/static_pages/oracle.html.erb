@@ -90,8 +90,7 @@
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent=this.id-1;
-    console.log(pos_cards[this.id-1].innerText);
+    document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText;
     });
   }
 <% end %>
