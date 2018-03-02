@@ -87,7 +87,12 @@
   for (var i = 0 ; i < target_imgs.length; i++) {
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の正位置";
+    if (this.classList.contains("0") == true){
+      document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の正位置";
+    }
+    else{
+      document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の逆位置";
+    }
     });
   }
 <% end %>
