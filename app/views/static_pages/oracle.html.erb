@@ -9,21 +9,51 @@
       <% image_pos = position.sample(1) %>
       <% image_name = image_pos[0].to_s+image_num %>
       <% image_path = "tarot/"+image_name+".png" %>
-      <%= image_tag(image_path, :height => "400px", :class => "tarot-image #{image_pos[0].to_s}", :id => image_num) %>
-      <% if (i == 1) || (i == 3) %>
+      <%= image_tag(image_path, :height => "260px", :class => "tarot-image #{image_pos[0].to_s}", :id => image_num) %>
+      <% if (i == 2) %>
         <br>
       <% end %>
     <% end %>
+    <br>
+    <%= link_to "もう一度占う", oracle_path, class: "btn btn-lg btn-cyan700_rsd" %>
   </p>
   <p id="result">
     <%= image_tag("tarot/000.png", :height => "500px", :id => "result-image") %>
+    <div id="result-name">
+      カード名
+    </div>
     <div id="result-description">
       説明
     </div>
   </p>
 </div>
 
-<div class="cardlist">
+  <div>
+    <p class="cardlist" id="01">意志</p>
+    <p class="cardlist" id="02">清楚</p>
+    <p class="cardlist" id="03">理性</p>
+    <p class="cardlist" id="04">秩序</p>
+    <p class="cardlist" id="05">知恵</p>
+    <p class="cardlist" id="06">誓約</p>
+    <p class="cardlist" id="07">善良</p>
+    <p class="cardlist" id="08">節度</p>
+    <p class="cardlist" id="09">至誠</p>
+    <p class="cardlist" id="10">生命</p>
+    <p class="cardlist" id="11">寛容</p>
+    <p class="cardlist" id="12">解放</p>
+    <p class="cardlist" id="13">調和</p>
+    <p class="cardlist" id="14">創造</p>
+    <p class="cardlist" id="15">信頼</p>
+    <p class="cardlist" id="16">公式</p>
+    <p class="cardlist" id="17">変化</p>
+    <p class="cardlist" id="18">結合</p>
+    <p class="cardlist" id="19">厳格</p>
+    <p class="cardlist" id="20">勇気</p>
+    <p class="cardlist" id="21">幸運</p>
+    <p class="cardlist" id="22">庇護</p>
+    <p class="cardlist" id="23">治癒</p>
+    <p class="cardlist" id="24">慈愛</p>
+  </div>
   <div>
     <p class="positive" id="01">精神力 / 克己心 / 決断 / 意地</p>
     <p class="positive" id="02">清楚</p>
@@ -76,11 +106,11 @@
     <p class="reverse" id="23">治癒</p>
     <p class="reverse" id="24">慈愛</p>
   </div>
-</div>
 
 <%= javascript_tag do %>
   var target_imgs = document.getElementsByClassName("tarot-image");
 
+  var cards = document.getElementsByClassName("cardlist");
   var pos_cards = document.getElementsByClassName("positive");
   var rev_cards = document.getElementsByClassName("reverse");
 
@@ -88,10 +118,12 @@
     target_imgs[i].addEventListener("click", function(){
     document.getElementById("result-image").src = this.src;
     if (this.classList.contains("0") == true){
-      document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の正位置";
+      document.getElementById("result-name").textContent=cards[this.id-1].innerText+"の正位置";
+      document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText;
     }
     else{
-      document.getElementById("result-description").textContent=pos_cards[this.id-1].innerText+"の逆位置";
+      document.getElementById("result-name").textContent=cards[this.id-1].innerText+"の逆位置";
+      document.getElementById("result-description").textContent=rev_cards[this.id-1].innerText;
     }
     });
   }

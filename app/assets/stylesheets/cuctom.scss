@@ -38,7 +38,7 @@ footer {
   width: 960px;
   margin: 0 auto;
   text-align: left;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 img {
@@ -147,10 +147,14 @@ textarea {
 
 /* oracle */
 #oracle {
-  width: 480px;
+  width: 640px;
   margin-top: 30px;
   margin-left: 10px;
   float: left;
+  .btn {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .tarot-image {
@@ -158,22 +162,36 @@ textarea {
 }
 
 #result {
-  width: 420px;
-  margin: 0 10px 0 30px;
+  width: 280px;
+  margin: 0 10px 0 10px;
   float: right;
 }
 
 #result-image {
   margin-top: 40px;
-  margin-left: 140px
+  margin-left: 0px
+}
+
+#result-name {
+  width: 280px;
+  float: right;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin: 20px 10px 0px 10px;
+  text-align: center;
+  text-shadow: 1px 2px 3px #000000;
 }
 
 #result-description {
-  font-size: 30px;
+  width: 280px;
+  float: right;
+  font-size: 20px;
   color: #ffffff;
   font-family: "Bitter", serif;
-  margin-top: 20px;
+  margin: 0px 10px 0px 10px;
   text-align: center;
+  text-shadow: 1px 2px 3px #000000;
 }
 
 #oracle:after {
@@ -221,6 +239,10 @@ textarea {
   font-size: 16px;
   color: #ffffff;
   font-family: "Bitter", serif;
+}
+
+.cardlist {
+  display: none;
 }
 
 .positive {
