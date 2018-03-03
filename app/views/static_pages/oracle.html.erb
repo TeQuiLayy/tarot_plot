@@ -1,18 +1,29 @@
 <% provide(:title, "Oracle | ") %>
 <div class="content">
   <p id="oracle">
+    &nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;主人公の現在
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;主人公の近い未来
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;主人公の過去<br>
     <% tarot = (1..24).to_a %>
     <% position = [0, 1]%>
     <% oracle = tarot.sample(6) %>
-    <% for i in 0..5 do %>
+    <% for i in 0..2 do %>
       <% image_num = oracle[i].to_s.rjust(2, "0") %>
       <% image_pos = position.sample(1) %>
       <% image_name = image_pos[0].to_s+image_num %>
       <% image_path = "tarot/"+image_name+".png" %>
       <%= image_tag(image_path, :height => "260px", :class => "tarot-image #{image_pos[0].to_s}", :id => image_num) %>
-      <% if (i == 2) %>
-        <br>
-      <% end %>
+    <% end %>
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;援助者
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;敵対者
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;結末（目的）<br>
+    <% for i in 3..5 do %>
+      <% image_num = oracle[i].to_s.rjust(2, "0") %>
+      <% image_pos = position.sample(1) %>
+      <% image_name = image_pos[0].to_s+image_num %>
+      <% image_path = "tarot/"+image_name+".png" %>
+      <%= image_tag(image_path, :height => "260px", :class => "tarot-image #{image_pos[0].to_s}", :id => image_num) %>
     <% end %>
     <br>
     <%= link_to "もう一度占う", oracle_path, class: "btn btn-lg btn-cyan700_rsd" %>
