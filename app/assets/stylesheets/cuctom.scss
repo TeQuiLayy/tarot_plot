@@ -147,7 +147,7 @@ textarea {
 
 /* oracle */
 #oracle {
-  width: 640px;
+  width: 620px;
   margin-top: 30px;
   margin-left: 10px;
   float: left;
@@ -155,10 +155,23 @@ textarea {
     margin-top: 30px;
     margin-left: 30px;
   }
+}
+
+.oracle-list {
   font-size: 15px;
   color: #ffffff;
   font-family: "Bitter", serif;
   text-shadow: 1px 2px 3px #000000;
+  list-style: none;
+  li {
+    float: left;
+  }
+  li:nth-child(3) {
+    margin-right: 40px;
+  }
+  dt {
+    text-align: center;
+  }
 }
 
 .tarot-image {
@@ -166,18 +179,29 @@ textarea {
 }
 
 #result {
-  width: 280px;
+  width: 300px;
   margin: 0 10px 0 10px;
   float: right;
 }
 
 #result-image {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 0px
 }
 
+#result-factor {
+  width: 300px;
+  float: right;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin: 20px 15px 0px 0px;
+  text-align: center;
+  text-shadow: 1px 2px 3px #000000;
+}
+
 #result-name {
-  width: 280px;
+  width: 300px;
   float: right;
   font-size: 25px;
   color: #ffffff;
@@ -188,7 +212,7 @@ textarea {
 }
 
 #result-description {
-  width: 280px;
+  width: 300px;
   float: right;
   font-size: 20px;
   color: #ffffff;
