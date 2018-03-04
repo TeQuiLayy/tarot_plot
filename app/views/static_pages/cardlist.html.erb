@@ -1,29 +1,64 @@
 <% provide(:title, "Cardlist | ") %>
-<div id="cardlist" class="content">
-  <h1 id="001" class="cardlist">【意志】</h1>
-  <h1 id="002" class="cardlist">【清楚】</h1>
-  <h1 id="003" class="cardlist">【理性】</h1>
-  <h1 id="004" class="cardlist">【秩序】</h1>
-  <h1 id="005" class="cardlist">【知恵】</h1>
-  <h1 id="006" class="cardlist">【誓約】</h1>
-  <h1 id="007" class="cardlist">【善良】</h1>
-  <h1 id="008" class="cardlist">【節度】</h1>
-  <h1 id="009" class="cardlist">【至誠】</h1>
-  <h1 id="010" class="cardlist">【生命】</h1>
-  <h1 id="011" class="cardlist">【寛容】</h1>
-  <h1 id="012" class="cardlist">【解放】</h1>
-  <h1 id="013" class="cardlist">【調和】</h1>
-  <h1 id="014" class="cardlist">【創造】</h1>
-  <h1 id="015" class="cardlist">【信頼】</h1>
-  <h1 id="016" class="cardlist">【公式】</h1>
-  <h1 id="017" class="cardlist">【変化】</h1>
-  <h1 id="018" class="cardlist">【結合】</h1>
-  <h1 id="019" class="cardlist">【厳格】</h1>
-  <h1 id="020" class="cardlist">【勇気】</h1>
-  <h1 id="021" class="cardlist">【幸運】</h1>
-  <h1 id="022" class="cardlist">【庇護】</h1>
-  <h1 id="023" class="cardlist">【治癒】</h1>
-  <h1 id="024" class="cardlist">【慈愛】</h1>
+<dl class="cardlist">
+<dt class="description">
+  <img src="assets/tarot/pos01.png" alt="001", height="400px", class="imglist">
+</dt>
+<dd>【意志】</dd>
+<dd>正位置：</dd>
+<dd>逆位置：</dd>
+
+  <img src="assets/tarot/pos02.png" alt="002", height="400px", class="imglist">
+  <img src="assets/tarot/pos03.png" alt="003", height="400px", class="imglist">
+  <img src="assets/tarot/pos04.png" alt="004", height="400px", class="imglist">
+  <img src="assets/tarot/pos05.png" alt="005", height="400px", class="imglist">
+  <img src="assets/tarot/pos06.png" alt="006", height="400px", class="imglist">
+  <img src="assets/tarot/pos07.png" alt="007", height="400px", class="imglist">
+  <img src="assets/tarot/pos08.png" alt="008", height="400px", class="imglist">
+  <img src="assets/tarot/pos09.png" alt="009", height="400px", class="imglist">
+  <img src="assets/tarot/pos10.png" alt="010", height="400px", class="imglist">
+  <img src="assets/tarot/pos11.png" alt="011", height="400px", class="imglist">
+  <img src="assets/tarot/pos12.png" alt="012", height="400px", class="imglist">
+  <img src="assets/tarot/pos13.png" alt="013", height="400px", class="imglist">
+  <img src="assets/tarot/pos14.png" alt="014", height="400px", class="imglist">
+  <img src="assets/tarot/pos15.png" alt="015", height="400px", class="imglist">
+  <img src="assets/tarot/pos16.png" alt="016", height="400px", class="imglist">
+  <img src="assets/tarot/pos17.png" alt="017", height="400px", class="imglist">
+  <img src="assets/tarot/pos18.png" alt="018", height="400px", class="imglist">
+  <img src="assets/tarot/pos19.png" alt="019", height="400px", class="imglist">
+  <img src="assets/tarot/pos20.png" alt="020", height="400px", class="imglist">
+  <img src="assets/tarot/pos21.png" alt="021", height="400px", class="imglist">
+  <img src="assets/tarot/pos22.png" alt="022", height="400px", class="imglist">
+  <img src="assets/tarot/pos23.png" alt="023", height="400px", class="imglist">
+  <img src="assets/tarot/pos24.png" alt="024", height="400px", class="imglist">
+</dl>
+
+<dl id="cardlist" class="content">
+  <dt>【意志】</dt>
+  <dt>【清楚】</dt>
+  <dt>【理性】</dt>
+  <dt>【秩序】</dt>
+  <dt>【知恵】</dt>
+  <dt>【誓約】</dt>
+  <dt>【善良】</dt>
+  <dt>【節度】</dt>
+  <dt>【至誠】</dt>
+  <dt>【生命】</dt>
+  <dt>【寛容】</dt>
+  <dt>【解放】</dt>
+  <dt>【調和】</dt>
+  <dt>【創造】</dt>
+  <dt>【信頼】</dt>
+  <dt>【公式】</dt>
+  <dt>【変化】</dt>
+  <dt>【結合】</dt>
+  <dt>【厳格】</dt>
+  <dt>【勇気】</dt>
+  <dt>【幸運】</dt>
+  <dt>【庇護】</dt>
+  <dt>【治癒】</dt>
+  <dt>【慈愛】</dt>
+</dl>
+
 
   <ul class="positive">
     <li id="01">精神力 / 克己心 / 決断 / 意地</li>
@@ -79,13 +114,3 @@
     <li id="24">慈愛</li>
   </ul>
 </div>
-
-<%= javascript_tag do %>
-  var target_imgs = document.getElementsByClassName("tarot-image");
-  for (var i = 0 ; i < target_imgs.length; i++) {
-    target_imgs[i].addEventListener("click", function(){
-    document.getElementById("result-image").src = this.src;
-    document.getElementById("result-description").textContent="あいうえお";
-    });
-  }
-<% end %>

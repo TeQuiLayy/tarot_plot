@@ -245,6 +245,7 @@ textarea {
 
 #about table {
   width: 300px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -263,14 +264,14 @@ textarea {
 
 
 /* cardlist */
-#cardlist h1 {
-  font-size: 16px;
+.cardlist {
+  font-size: 25px;
   color: #ffffff;
   font-family: "Bitter", serif;
-}
-
-.cardlist {
-  display: none;
+  margin-top: 40px;
+  margin-left: 100px;
+  float: left;
+  clear: left;
 }
 
 .positive {
