@@ -37,12 +37,14 @@ body {
 footer {
   width: 960px;
   margin: 0 auto;
-  text-align: left;
   margin-top: 50px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
-img {
-  vertical-align: bottom;
+footer small {
+  font-size: 12px;
 }
 
 ul {
@@ -93,16 +95,6 @@ header {
   margin: 0 auto;
 }
 
-footer {
-  text-align: center;
-  color: #ffffff;
-  padding: 20px 0;
-}
-
-footer small {
-  font-size: 12px;
-}
-
 section {
   overflow: auto;
 }
@@ -145,11 +137,29 @@ textarea {
   font-family: "Bitter", serif;
 }
 
+#index a {
+  color: #ffffff;
+}
+
+#index a:visited {
+  color: #ffffff;
+}
+
 /* oracle */
+#oracle-clear.content:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
 #oracle {
   width: 620px;
-  margin-top: 30px;
-  margin-left: 10px;
+  padding-top: 30px;
+  padding-left: 10px;
+  /*margin-top: 30px;
+  margin-left: 10px;*/
   float: left;
   .btn {
     margin-top: 30px;
@@ -179,8 +189,8 @@ textarea {
 }
 
 #result {
-  width: 300px;
-  margin: 0 10px 0 10px;
+  width: 330px;
+  height: 750px;
   float: right;
 }
 
@@ -195,7 +205,7 @@ textarea {
   font-size: 25px;
   color: #ffffff;
   font-family: "Bitter", serif;
-  margin: 20px 15px 0px 0px;
+  margin: 20px 45px 0px 0px;
   text-align: center;
   text-shadow: 1px 2px 3px #000000;
 }
@@ -206,7 +216,7 @@ textarea {
   font-size: 25px;
   color: #ffffff;
   font-family: "Bitter", serif;
-  margin: 20px 16px 0px 0px;
+  margin: 20px 45px 0px 0px;
   text-align: center;
   text-shadow: 1px 2px 3px #000000;
 }
@@ -217,15 +227,37 @@ textarea {
   font-size: 20px;
   color: #ffffff;
   font-family: "Bitter", serif;
-  margin: 0px 16px 0px 0px;
+  margin: 0px 45px 0px 0px;
   text-align: center;
   text-shadow: 1px 2px 3px #000000;
+}
+
+div#id .btn {
+  margin-bottom: 100px;
 }
 
 #oracle:after {
   content: "";
   display: block;
   clear: both;
+}
+
+#result:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.result-name-list {
+  display: none;
+}
+
+.pos-des-list {
+ display: none;
+}
+
+.rev-des-list {
+  display: none;
 }
 
 /* about */
@@ -235,6 +267,7 @@ textarea {
   font-family: "Bitter", serif;
   margin-top: 10px;
   padding: 30px;
+  padding-bottom: 0px;
   text-shadow: 1px 2px 3px #000000;
 }
 
@@ -250,12 +283,12 @@ textarea {
 }
 
 #about a {
-  color: #e6e6e6;
+  color: #ffffff;
   text-decoration: none;
 }
 
 #about a:visited {
-  color: #e6e6e6;
+  color: #ffffff;
 }
 
 #about a:hover {
@@ -264,21 +297,65 @@ textarea {
 
 
 /* cardlist */
-.cardlist {
-  font-size: 25px;
+div.tarot-description {
+  width: 460px;
+  height: 400px;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+div.tarot-description img {
+  float: left;
+}
+
+div.tarot-caption {
+  font-size: 20px;
   color: #ffffff;
   font-family: "Bitter", serif;
-  margin-top: 40px;
-  margin-left: 100px;
-  float: left;
-  clear: left;
+  margin-left: 225px;
+  text-shadow: 1px 2px 3px #000000;
 }
 
-.positive {
-  display: none;
+div.tarot-name {
+  margin-bottom: 20px;
 }
 
-.reverse {
-  display: none;
+div.pos-des {
+  margin-bottom: 20px;
 }
+
+div.tarot-description:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#cardlist.content:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
 /* contact */
+#contact {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Bitter", serif;
+  margin-top: 10px;
+  padding: 30px;
+  padding-bottom: 0px;
+  text-shadow: 1px 2px 3px #000000;
+}
+
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#contact a:visited {
+  color: #ffffff;
+}

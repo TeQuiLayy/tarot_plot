@@ -1,5 +1,5 @@
 <% provide(:title, "Oracle | ") %>
-<div class="content">
+<div id="oracle-clear" class="content">
   <div id="oracle">
     <% tarot = (1..24).to_a %>
     <% position = ["pos", "rev"]%>
@@ -54,7 +54,7 @@
   </div>
 </div>
 
-  <div>
+  <div class="result-name-list">
     <p class="cardlist" id="01">意志</p>
     <p class="cardlist" id="02">清楚</p>
     <p class="cardlist" id="03">理性</p>
@@ -80,7 +80,7 @@
     <p class="cardlist" id="23">治癒</p>
     <p class="cardlist" id="24">慈愛</p>
   </div>
-  <div>
+  <div class="pos-des-list">
     <p class="positive" id="01">精神力のある / 克己心が強い / 決断 / 意地っ張り</p>
     <p class="positive" id="02">可憐 / 清純 / 気品がある / 美しい</p>
     <p class="positive" id="03">知性的 / 合理的 / 理解力 / 冷静</p>
@@ -95,42 +95,42 @@
     <p class="positive" id="12">解き放つ / 助け出す / 手放す / 喪失 / 許す</p>
     <p class="positive" id="13">協力 / 似合う / 釣り合う / 一致</p>
     <p class="positive" id="14">製作 / 建築 / 独創性のある / 発明</p>
-    <p class="positive" id="15">信頼</p>
-    <p class="positive" id="16">公式</p>
-    <p class="positive" id="17">変化</p>
-    <p class="positive" id="18">結合</p>
-    <p class="positive" id="19">厳格</p>
-    <p class="positive" id="20">勇気</p>
-    <p class="positive" id="21">幸運</p>
-    <p class="positive" id="22">庇護</p>
-    <p class="positive" id="23">治癒</p>
-    <p class="positive" id="24">慈愛</p>
+    <p class="positive" id="15">信任 / 任せる / 当てにする / 依存</p>
+    <p class="positive" id="16">儀式 / 正式 / 堅苦しい / 模範</p>
+    <p class="positive" id="17">変質 / 革命 / バリエーション / 入れ替え</p>
+    <p class="positive" id="18">組み合わせ / 合流 / 協同 / 連鎖</p>
+    <p class="positive" id="19">厳か / 手厳しい / 苛烈 / シビア</p>
+    <p class="positive" id="20">勇敢 / 根性 / 度胸 / 無遠慮</p>
+    <p class="positive" id="21">巡り合わせ / 果報 / 多幸 / 好機</p>
+    <p class="positive" id="22">保護する / 後見人 / サポートする</p>
+    <p class="positive" id="23">回復 / 再起 / 復調 / 治る</p>
+    <p class="positive" id="24">慈しみ / 情愛 / あたたかみ / 優しさ</p>
   </div>
-  <div>
+  <div class="rev-des-list">
     <p class="reverse" id="01">優柔不断 / 躊躇 / 本意でない結果</p>
-    <p class="reverse" id="02">清楚</p>
-    <p class="reverse" id="03">理性</p>
-    <p class="reverse" id="04">秩序</p>
-    <p class="reverse" id="05">知恵</p>
-    <p class="reverse" id="06">誓約</p>
-    <p class="reverse" id="07">善良</p>
-    <p class="reverse" id="08">節度</p>
-    <p class="reverse" id="09">至誠</p>
-    <p class="reverse" id="10">生命</p>
-    <p class="reverse" id="11">寛容</p>
-    <p class="reverse" id="12">解放</p>
-    <p class="reverse" id="13">調和</p>
-    <p class="reverse" id="14">創造</p>
-    <p class="reverse" id="15">信頼</p>
-    <p class="reverse" id="16">公式</p>
-    <p class="reverse" id="17">変化</p>
-    <p class="reverse" id="18">結合</p>
-    <p class="reverse" id="19">厳格</p>
-    <p class="reverse" id="20">勇気</p>
-    <p class="reverse" id="21">幸運</p>
-    <p class="reverse" id="22">庇護</p>
-    <p class="reverse" id="23">治癒</p>
-    <p class="reverse" id="24">慈愛</p>
+    <p class="reverse" id="02">色っぽい / 官能的 / セクシュアル</p>
+    <p class="reverse" id="03">感情的 / フィーリング / 情熱 / 気分屋</p>
+    <p class="reverse" id="04">混沌 / 大騒ぎ / 崩壊 / 狼狽 / 不安</p>
+    <p class="reverse" id="05">無知 / 暗愚 / 白痴 / 浅はか / 間抜け</p>
+    <p class="reverse" id="06">裏切り / 背信 / 不義 / 反逆</p>
+    <p class="reverse" id="07">邪悪 / 不道徳 / 遺恨 / 害悪 / 意地悪い</p>
+    <p class="reverse" id="08">無節操 / 尻軽 / けじめがない / 変節漢</p>
+    <p class="reverse" id="09">不実 / 虚言 / 不忠 / 詐偽 / 空言</p>
+    <p class="reverse" id="10">絶命 / 終わり / もしものこと / 死神 / 喪失</p>
+    <p class="reverse" id="11">狭量 / けちくさい / せせこましい / 融通の利かない</p>
+    <p class="reverse" id="12">束縛 / 拘束 / 抑圧 / 制限 / 閉じ込める</p>
+    <p class="reverse" id="13">対立 / 排他 / 諍い / 食い違い</p>
+    <p class="reverse" id="14">模倣 / 破壊 / 解体 / 人真似</p>
+    <p class="reverse" id="15">疑惑 / 心許ない / 危うい / 不確実</p>
+    <p class="reverse" id="16">私的 / 内輪 / 個人的 / 簡略 / 軽い</p>
+    <p class="reverse" id="17">不変 / 永遠 / 静的 / 不滅 / 変えられない</p>
+    <p class="reverse" id="18">分離 / 別れ / 離れ離れ / 解散</p>
+    <p class="reverse" id="19">だらしない / 杜撰 / 軟弱 / 不甲斐ない</p>
+    <p class="reverse" id="20">臆病 / 腰抜け / 気が小さい / シャイ</p>
+    <p class="reverse" id="21">災難 / 薄幸 / 薄命 / 悪運 / 厄</p>
+    <p class="reverse" id="22">圧政 / 虐げる / いびる / 責め苛む</p>
+    <p class="reverse" id="23">傷つく / 汚点になる / 堪える / 心を痛める</p>
+    <p class="reverse" id="24">憎悪 / 嫌忌 / 毛嫌う / 唾棄する</p>
   </div>
 
 <%= javascript_tag do %>
